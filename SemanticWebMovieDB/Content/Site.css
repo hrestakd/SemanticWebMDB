@@ -97,7 +97,23 @@ h5, h6 {
     margin: 0 auto;
     max-width: 960px;
 }
-
+#wrapper {
+  margin-right: 200px;
+}
+#content {
+  float: left;
+  width: 100%;
+  background-color: #CCF;
+}
+#sidebar {
+  float: right;
+  width: 200px;
+  margin-right: -200px;
+  background-color: #FFA;
+}
+#cleared {
+  clear: both;
+}
 #body {
     background-color: #efeeef;
     clear: both;

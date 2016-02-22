@@ -1,0 +1,21 @@
+﻿@model List<SemanticWebMovieDB.Models.Movie>
+
+@{
+    ViewBag.Title = "Movie results:";
+}
+
+<h2>Movie results:</h2>
+<table>
+    <tr>
+        <td colspan="5"><h3>Title</h3></td>
+        <td colspan="5"><h3></h3></td>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.title</td>
+            <td>@item.uri</td>
+            <td>@Html.ActionLink("Details", "MovieDetails", "Home", new { uriString = item.uri, title = item.title, lang = "en" }, null)</td>
+        </tr>
+    }
+</table>
